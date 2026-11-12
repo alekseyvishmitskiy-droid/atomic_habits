@@ -1,0 +1,7 @@
+SECRET_KEY=ваш-секретный-ключ-django
+DEBUG=True
+TELEGRAM_BOT_TOKEN=ваш_новый_токен_от_botfather
+CELERY_BROKER_URL=redis://127.0.0.1:6379/0
+CELERY_RESULT_BACKEND=redis://127.0.0.1:6379/0
+
+TELEGRAM_BOT_TOKEN=8813952698:AAG_6UPiCBcUVjjrLK3RnajwfuTAw3NwY6s
