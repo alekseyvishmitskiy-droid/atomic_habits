@@ -13,7 +13,7 @@ router.register(r"habits", HabitViewSet, basename="habits")
 urlpatterns = [
     path("admin/", admin.site.urls),
 
-
+    
     path("api/users/register/", UserRegisterAPIView.as_view(), name="register"),
     path("api/users/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("api/users/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
