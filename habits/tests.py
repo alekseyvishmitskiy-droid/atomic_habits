@@ -121,7 +121,6 @@ class HabitTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data["count"], 2)
 
-
         self.client.force_authenticate(user=self.other_user)
         public_response = self.client.get(reverse("public_habits"))
         self.assertEqual(public_response.status_code, status.HTTP_200_OK)
@@ -149,7 +148,6 @@ class HabitTestCase(APITestCase):
     def test_habit_str_and_patch(self):
         self.assertIn("Прогулка вокруг квартала", str(self.useful_habit))
 
-
         url = reverse("habits-detail", args=[self.useful_habit.id])
         response = self.client.patch(url, {"place": "Парк"}, format="json")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -161,4 +159,3 @@ class HabitTestCase(APITestCase):
 
         send_telegram_message("123456", "Тестовое сообщение")
         mock_post.assert_called_once()
-

@@ -218,3 +218,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+.env
+db.sqlite3
+.coverage
+celerybeat-schedule*
+staticfiles/
+media/
+
+.idea/

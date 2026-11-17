@@ -14,7 +14,6 @@ class UserTestCase(APITestCase):
         response = self.client.post(register_url, register_data, format="json")
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
-
         token_url = reverse("token_obtain_pair")
         login_data = {
             "email": "newuser@example.com",

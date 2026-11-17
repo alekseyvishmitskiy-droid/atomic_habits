@@ -11,7 +11,6 @@ def send_habit_reminders():
     current_time = now.time().replace(second=0, microsecond=0)
     today = now.date()
 
-
     habits = Habit.objects.filter(
         is_pleasant=False,
         time__hour=current_time.hour,
