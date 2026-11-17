@@ -225,3 +225,5 @@ db.sqlite3
 celerybeat-schedule*
 staticfiles/
 media/
+
+.idea/
