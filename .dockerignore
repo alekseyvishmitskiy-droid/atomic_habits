@@ -8,3 +8,10 @@ venv
 .env
 db.sqlite3
 celerybeat-schedule*
+
+.env
+db.sqlite3
+.coverage
+celerybeat-schedule*
+staticfiles/
+media/
